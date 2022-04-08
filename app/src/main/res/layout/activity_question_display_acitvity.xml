@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".QuestionDisplayAcitvity"
+
+    android:fillViewport="true">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp"
+        >
+
+        <TextView
+            android:id="@+id/qus"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:fontFamily="@font/inder"
+            android:gravity="center"
+            android:textColor="@color/dark_blue"
+            android:textSize="25dp"
+            tools:text="The ratio of width of our National flag to its length is">
+
+        </TextView>
+
+        <ImageView
+            android:id="@+id/image"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:src="@drawable/fg1_uk"
+            android:contentDescription="Quiz Image">
+
+        </ImageView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            >
+
+            <ProgressBar
+                android:id="@+id/progress"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:max="10"
+                style="?android:attr/progressBarStyleHorizontal"
+                android:progress="1"
+                android:minHeight="50dp"
+                android:indeterminate="false"
+
+                >
+
+
+
+            </ProgressBar>
+
+            <TextView
+                android:id="@+id/prg_no"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/maven_pro_medium"
+                android:gravity="center"
+                android:padding="5dp"
+                android:textSize="15dp"
+                tools:text="1/10"
+                android:textColor="@color/dark_blue"
+                android:background="@drawable/defalult_option"
+                ></TextView>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/first"
+            android:layout_width="match_parent"
+            android:background="@drawable/defalult_option"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:fontFamily="@font/inder"
+            android:gravity="center"
+            android:textColor="@color/dark_blue"
+            android:textSize="25dp"
+            tools:text="3:5">
+
+        </TextView>
+
+        <TextView
+            android:id="@+id/sec"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:fontFamily="@font/inder"
+            android:background="@drawable/defalult_option"
+            android:gravity="center"
+            android:textColor="@color/dark_blue"
+            android:textSize="25dp"
+            tools:text="2:5">
+
+        </TextView>
+
+        <TextView
+            android:id="@+id/third"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:fontFamily="@font/inder"
+            android:gravity="center"
+            android:background="@drawable/defalult_option"
+            android:textSize="25dp"
+            android:textColor="@color/dark_blue"
+            tools:text="2:4">
+
+        </TextView>
+
+        <TextView
+            android:id="@+id/fourth"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:fontFamily="@font/inder"
+            android:gravity="center"
+            android:background="@drawable/defalult_option"
+            android:textColor="@color/dark_blue"
+            android:textSize="25dp"
+            tools:text="3:4">
+
+        </TextView>
+        <Button
+            android:id="@+id/button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Submit"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/for_button"
+            style="@style/Widget.AppCompat.Button.Borderless"
+
+            >
+
+        </Button>
+
+    </LinearLayout>
+
+
+</ScrollView>
